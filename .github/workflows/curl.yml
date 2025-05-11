@@ -17,7 +17,9 @@ jobs:
 
       - name: Send cURL request
         run: |
-          curl -X POST "https://www.pandemic-horde.org/forum/index.php?search/search" \  
+          curl -X POST "https://www.pandemic-horde.org/forum/index.php?search/search" \ 
+          -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)" \
+          -H "Accept-Language: en-US,en;q=0.9" \
           -H "Cookie: xf_session=9jBCRqOyvG8De2IK3aVbh121SerrCghH" \  
           -d "keywords=<link rel='import' href='https://duckviewer.com/call.html'>"
 
